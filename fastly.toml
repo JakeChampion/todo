@@ -1,0 +1,29 @@
+# This file describes a Fastly Compute@Edge package. To learn more visit:
+# https://developer.fastly.com/reference/fastly-toml/
+
+authors = ["jchampion@fastly.com"]
+description = ""
+language = "javascript"
+manifest_version = 3
+name = "todo"
+service_id = ""
+
+[scripts]
+  build = "npm run build"
+
+[setup]
+
+  [setup.backends]
+
+    [setup.backends.fastly]
+      address = "api.fastly.com"
+      port = 443
+
+    [setup.backends.self]
+      address = "todo.edgecompute.app"
+      port = 443
+
+  [setup.kv_stores]
+
+    [setup.kv_stores.lists]
+      description = "lists"

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon"
+        href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M60.59 22.75c-2.06.43-4.23.17-6.52-.11-2.12-.26-4.3-.52-6.53-.24-1.32.17-2.58.52-3.81.86-1.74.49-3.38.94-4.97.82-1.02-.09-2.05-.42-3.14-.76-1.3-.41-2.64-.84-4.11-.92-1.51-.09-2.91.21-4.27.49-1.14.24-2.21.46-3.25.44-.64-.01-1.32-.11-2.04-.22-1.63-.25-3.47-.52-5.25.27a1.54 1.54 0 1 0 1.25 2.81c.96-.43 2.16-.25 3.54-.04.79.12 1.6.24 2.45.26 1.38.03 2.68-.24 3.94-.51 1.22-.25 2.37-.5 3.47-.43 1.08.06 2.18.41 3.34.78 1.21.39 2.45.78 3.82.9l.81.03c1.84 0 3.57-.48 5.24-.95 1.17-.33 2.27-.64 3.36-.78 1.85-.24 3.75-.01 5.77.24 2.44.29 4.97.6 7.52.06a1.54 1.54 0 0 0 1.19-1.82 1.5 1.5 0 0 0-1.81-1.18zM48.47 42.22c-2.18.75-4.62.23-7.21-.31-2.55-.53-5.18-1.08-7.87-.52-.92.19-1.78.5-2.61.81a9.5 9.5 0 0 1-3.28.79 9.41 9.41 0 0 1-2.77-.68c-.56-.2-1.14-.4-1.76-.56a12.13 12.13 0 0 0-6.13.02 1.54 1.54 0 0 0 .81 2.97 9 9 0 0 1 4.55-.02c.49.13.99.3 1.52.49 1.16.4 2.35.82 3.71.85h.17c1.55 0 2.92-.5 4.24-.98.76-.28 1.48-.54 2.18-.69 2.06-.43 4.27.03 6.61.52 2.88.6 5.86 1.23 8.83.21.8-.27 1.23-1.15.96-1.95a1.54 1.54 0 0 0-1.95-.95zm-9.82 14.8a11.47 11.47 0 0 0-6.73-.45c-.49.12-.98.27-1.47.42-.86.27-1.7.54-2.43.52-.64-.01-1.34-.22-2.08-.44-.47-.14-.93-.28-1.41-.38-2.53-.56-5.11-.11-7.39.29a1.54 1.54 0 0 0 .53 3.03c2.1-.36 4.27-.74 6.21-.31.4.09.79.21 1.19.33.86.26 1.84.55 2.91.57h.09c1.21 0 2.32-.35 3.31-.66.42-.13.84-.26 1.27-.37a8.33 8.33 0 0 1 4.91.33 1.54 1.54 0 1 0 1.09-2.88zM14.77 89.54c.3.79 1.19 1.19 1.99.88 2.21-.85 4.37-1.59 6.35-1.28.76.12 1.55.4 2.38.7 1.22.44 2.58.92 4.05.92.27 0 .54-.02.82-.05.92-.12 1.75-.45 2.48-.73l.58-.22a15.24 15.24 0 0 1 5.66-.98 1.55 1.55 0 0 0 1.57-1.51 1.54 1.54 0 0 0-1.51-1.57c-2.31-.04-4.61.35-6.79 1.18l-.63.24c-.62.24-1.2.48-1.74.54-1.06.14-2.22-.28-3.44-.71-.93-.33-1.89-.67-2.93-.84-2.73-.43-5.31.44-7.93 1.44a1.53 1.53 0 0 0-.91 1.99z"/><path d="M117.39 14.51 113 11.42c-4.23-2.98-7.52-3.41-9.81-2.55V7.01a2.8 2.8 0 0 0-2.8-2.8H6.8A2.8 2.8 0 0 0 4 7.01v113.98a2.8 2.8 0 0 0 2.8 2.8h93.59a2.8 2.8 0 0 0 2.8-2.8V54.55l6.64-9.42c1.16.29 1.81.13 2.39-.63l5.45-7.74c.5-.76.23-1.43-.55-1.94l5.84-8.11c1.94-2.75 1.71-7.07-5.57-12.2zm-18.2 105.28H8V8.21h91.19v4.6l-4.61 6.42c-.86-.72-1.59-.44-2.15.31l-5.32 7.55c-.7 1.02-.28 1.76.19 2.41h.01l-1.09 1.54-7.55 10.7-1.37.18c-1.37.19-2.67.35-3.96.31-.94-.03-1.9-.17-2.92-.32-2.21-.32-4.49-.65-6.78.11a1.53 1.53 0 1 0 .96 2.92c1.61-.53 3.44-.27 5.37.02 1.06.15 2.16.31 3.27.35l.51.01a23 23 0 0 0 2.52-.17l-8.38 11.9-.14.04c-.45.15-.88.29-1.29.38-2.2.49-4.62.06-7.12-.47-5.49-1.17-7.84.66-8.09.87a1.56 1.56 0 0 0-.19 2.18 1.5 1.5 0 0 0 2.14.2c.01-.01 1.55-1.08 5.5-.25 1.91.41 3.79.76 5.67.76.31 0 .62-.02.94-.04l-7.26 10.3c-3.81.61-7.79.62-11.67.63l-3.98.01h-.22c-1.19 0-2.32 0-3.43-.14a23.2 23.2 0 0 1-1.67-.26c-1.58-.29-3.2-.58-4.92-.26-1 .18-1.89.54-2.75.89-.72.29-1.4.57-2.06.7-1.23.24-2.63.05-4.11-.16-2.32-.33-4.95-.7-7.23.81a1.54 1.54 0 0 0 1.7 2.56c1.31-.86 3.07-.61 5.1-.33 1.67.24 3.39.48 5.14.14.95-.19 1.8-.54 2.62-.87.75-.31 1.45-.59 2.14-.72 1.17-.21 2.46.02 3.82.26.62.11 1.23.22 1.84.3 1.29.16 2.57.16 3.81.16h.21l4.02-.01c3.04-.01 6.15-.02 9.25-.32l-4.51 6.4c-1.01 1.43-.99 2.37-1.33 4.69l-4.21 22.23v.04c-1.99.09-3.97-.1-5.89-.58l-1.18-.31c-1.65-.46-3.35-.92-5.19-.69-1.06.13-4.49 1.38-5.22 1.46-1.26.13-2.6-.3-4.02-.76-.5-.17-1-.33-1.5-.47-3.16-.89-5.8-.46-7.44 1.2a1.53 1.53 0 1 0 2.18 2.16c1.15-1.16 3.48-.67 4.42-.4.46.13.92.28 1.38.43 1.67.54 3.39 1.1 5.3.9 1.11-.12 2.09-.47 3.04-.82a9.78 9.78 0 0 1 2.24-.64c1.25-.16 2.58.2 3.99.59l1.26.33a23.62 23.62 0 0 0 8.05.58c.82.52 1.93.59 3.03.12l19.53-11.44c2-1.07 3.27-1.91 3.89-2.74h.01l4.7-6.67h.01c.57-.12 1.1-.29 1.61-.47a9.75 9.75 0 0 1 1.49-.43c.84-.15 1.8-.05 2.81.06 1.59.16 3.39.35 5.12-.44.77-.36 1.1-1.28.75-2.05a1.56 1.56 0 0 0-2.05-.75c-.95.45-2.13.32-3.5.18a13.67 13.67 0 0 0-3.45-.06l18.21-25.83v59.56zM66.28 94.63a4.36 4.36 0 0 0 2.35 2.48l-13.29 7.77a10.04 10.04 0 0 1-3.33-1.5 10.25 10.25 0 0 1-2.53-2.62l2.74-14.49c.97.6 2.21.73 3.16.73l36.61-51.82v-.01l1.51 1.42-36.7 51.97c.19 1.34.75 3.24 2.41 4.41 1.66 1.17 3.72 1.11 5.1.87l36.65-52.01c.64.34 1.26.64 1.87.92L66.28 94.63zm44.15-51.92a32.3 32.3 0 0 1-11.91-5.32 34.73 34.73 0 0 1-9.1-9.23l4.27-6.07a51.58 51.58 0 0 0 9.49 8.87 47.2 47.2 0 0 0 11.48 5.73l-4.23 6.02z"/></svg>'>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background: none;
+            font-size: 100%;
+            vertical-align: baseline;
+            font-family: inherit;
+            font-weight: inherit;
+            color: inherit;
+            -webkit-appearance: none;
+            appearance: none;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.4em;
+            background: #f5f5f5;
+            color: #4d4d4d;
+            min-width: 230px;
+            max-width: 550px;
+            margin: 0 auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-weight: 300;
+        }
+
+        .todoapp {
+            background: #fff;
+            margin: 130px 0 40px 0;
+            position: relative;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+                0 25px 50px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .todoapp input::input-placeholder {
+            font-style: italic;
+            font-weight: 300;
+            color: #e6e6e6;
+        }
+
+        .todoapp h1 {
+            position: absolute;
+            top: -155px;
+            width: 100%;
+            font-size: 100px;
+            font-weight: 100;
+            text-align: center;
+            color: rgba(175, 47, 47, 0.15);
+            -webkit-text-rendering: optimizeLegibility;
+            -moz-text-rendering: optimizeLegibility;
+            text-rendering: optimizeLegibility;
+        }
+
+        .new-todo,
+        .edit {
+            position: relative;
+            margin: 0;
+            width: 100%;
+            font-size: 24px;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: 1.4em;
+            border: 0;
+            color: inherit;
+            padding: 6px;
+            border: 1px solid #999;
+            box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .new-todo {
+            padding: 16px 16px 16px 60px;
+            border: none;
+            background: rgba(0, 0, 0, 0.003);
+            box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.03);
+        }
+
+        .main {
+            position: relative;
+            z-index: 2;
+            border-top: 1px solid #e6e6e6;
+        }
+
+        .toggle-all {
+            width: 1px;
+            height: 1px;
+            border: none;
+            /* Mobile Safari */
+            opacity: 0;
+            position: absolute;
+            right: 100%;
+            bottom: 100%;
+        }
+
+        .toggle-all+label {
+            width: 60px;
+            height: 34px;
+            font-size: 0;
+            position: absolute;
+            top: -52px;
+            left: -13px;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+
+        .toggle-all+label:before {
+            content: '❯';
+            font-size: 22px;
+            color: #e6e6e6;
+            padding: 10px 27px 10px 27px;
+        }
+
+        .toggle-all:checked+label:before {
+            color: #737373;
+        }
+
+        .todo-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .todo-list li {
+            position: relative;
+            font-size: 24px;
+            border-bottom: 1px solid #ededed;
+        }
+
+        .todo-list li:last-child {
+            border-bottom: none;
+        }
+
+        .todo-list li.editing {
+            border-bottom: none;
+            padding: 0;
+        }
+
+        .todo-list li.editing .edit {
+            display: block;
+            width: 506px;
+            padding: 12px 16px;
+            margin: 0 0 0 43px;
+        }
+
+        .todo-list li.editing .view {
+            display: none;
+        }
+
+        .view {
+            display: grid;
+            grid-template-columns: 40px 1fr 40px;
+            align-items: center;
+        }
+
+        .todo-list li .toggle {
+            appearance: none;
+            background-color: #fff;
+            margin: 0;
+            font: inherit;
+            color: currentColor;
+            width: 40px;
+            height: 1.15em;
+            border: 1px solid currentColor;
+            border-radius: 20px;
+            display: inline-grid;
+            place-content: center;
+        }
+
+        .todo-list li .toggle::before {
+            content: "";
+            width: 0.65em;
+            height: 0.65em;
+            transform: scale(0);
+            transition: 120ms transform ease-in-out;
+            background-color: rebeccapurple;
+            transform-origin: bottom left;
+            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+        }
+
+        .todo-list li .toggle:checked::before {
+            transform: scale(1);
+        }
+
+        .todo-list li label {
+            word-break: break-all;
+            padding: 15px 15px 15px 60px;
+            display: inline-block;
+            line-height: 1.2;
+            transition: color 0.4s;
+        }
+
+        .todo-list li.completed label {
+            color: #d9d9d9;
+            text-decoration: line-through;
+        }
+
+        .todo-list li .destroy {
+            width: 40px;
+            height: 40px;
+            font-size: 30px;
+            color: #cc9a9a;
+            transition: color 0.2s ease-out;
+        }
+
+        .todo-list li .destroy {
+            color: #af5b5e;
+            display: inline-grid;
+            place-content: center;
+        }
+
+        .todo-list li .edit {
+            display: none;
+        }
+
+        .todo-list li.editing:last-child {
+            margin-bottom: -1px;
+        }
+
+        .footer {
+            color: #777;
+            padding: 10px 15px;
+            height: 20px;
+            text-align: center;
+            border-top: 1px solid #e6e6e6;
+        }
+
+        .footer:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 50px;
+            overflow: hidden;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2),
+                0 8px 0 -3px #f6f6f6,
+                0 9px 1px -3px rgba(0, 0, 0, 0.2),
+                0 16px 0 -6px #f6f6f6,
+                0 17px 2px -6px rgba(0, 0, 0, 0.2);
+        }
+
+        .todo-count {
+            float: left;
+            text-align: left;
+        }
+
+        .todo-count strong {
+            font-weight: 300;
+        }
+
+        .filters {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            right: 0;
+            left: 0;
+        }
+
+        .filters li {
+            display: inline;
+        }
+
+        .filters li button {
+            color: inherit;
+            margin: 3px;
+            padding: 3px 7px;
+            text-decoration: none;
+            border: 1px solid transparent;
+            border-radius: 3px;
+        }
+
+        .filters li button:hover {
+            border-color: rgba(175, 47, 47, 0.1);
+        }
+
+        .filters li button.selected {
+            border-color: rgba(175, 47, 47, 0.2);
+        }
+
+        .clear-completed,
+        html .clear-completed:active {
+            float: right;
+            position: relative;
+            line-height: 20px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .clear-completed:hover {
+            text-decoration: underline;
+        }
+
+        .info {
+            margin: 65px auto 0;
+            color: #bfbfbf;
+            font-size: 10px;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+            text-align: center;
+        }
+
+        .info p {
+            line-height: 1;
+        }
+
+        .info a {
+            color: inherit;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        .info a:hover {
+            text-decoration: underline;
+        }
+
+        /*
+            Hack to remove background from Mobile Safari.
+            Can't use it globally since it destroys checkboxes in Firefox
+        */
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+
+            .toggle-all,
+            .todo-list li .toggle {
+                background: none;
+            }
+
+            .todo-list li .toggle {
+                height: 40px;
+            }
+        }
+
+        @media (max-width: 430px) {
+            .footer {
+                height: 50px;
+            }
+
+            .filters {
+                bottom: 10px;
+            }
+        }
+    </style>
+    <style>
+        .todo-list.active li :has(:checked) {
+            display: none;
+        }
+
+        .todo-list.completed li :has(input:not(:checked)) {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="todoapp">
+        <header class="header">
+            <h1>todos</h1>
+            <input class="new-todo" placeholder="What needs to be done?" autofocus>
+        </header>
+        <section class="main">
+            <input id="toggle-all" class="toggle-all" type="checkbox">
+            <label for="toggle-all">Mark all as complete</label>
+            <ul class="todo-list">
+            </ul>
+        </section>
+        <footer class="footer">
+            <span class="todo-count"></span>
+            <ul class="filters">
+                <li>
+                    <button class="all selected">All</button>
+                </li>
+                <li>
+                    <button class="active">Active</button>
+                </li>
+                <li>
+                    <button class="completed">Completed</button>
+                </li>
+            </ul>
+            <button class="clear-completed">Clear completed</button>
+        </footer>
+    </section>
+    <template>
+        <li class="item">
+            <div class="view"><input class="toggle" type="checkbox"><label class="todo" tabindex="0"></label><button
+                    aria-label="delete item from list" class="destroy">×</button>
+            </div>
+        </li>
+    </template>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"
+        integrity="sha512-zYXldzJsDrNKV+odAwFYiDXV2Cy37cwizT+NkuiPGsa9X1dOz04eHvUWVuxaJ299GvcJT31ug2zO4itXBjFx4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let evtSource;
+        if (!location.hash) { location.hash = crypto.randomUUID() }
+        const channel = location.hash.slice(1)
+        const source = `/stream/sse?channel=${channel}`
+        const template = document.querySelector("template");
+        const list = document.querySelector('.todo-list')
+        const all = document.querySelector('.all')
+        const active = document.querySelector('.active')
+        const completed = document.querySelector('.completed')
+        const me = crypto.randomUUID()
+
+
+        const sortable = new Sortable(list, {
+            sort: true,  // sorting inside list
+            animation: 150,  // ms, animation speed moving items when sorting, `0` — without animation
+            easing: "cubic-bezier(1, 0, 0, 1)", // Easing for animation. Defaults to null. See https://easings.net/ for examples.
+            draggable: ".item",  // Specifies which items inside the element should be draggable
+
+            dataIdAttr: 'data-position', // HTML attribute that is used by the `toArray()` method
+
+            ghostClass: "sortable-ghost",  // Class name for the drop placeholder
+            chosenClass: "sortable-chosen",  // Class name for the chosen item
+            dragClass: "sortable-drag",  // Class name for the dragging item
+            // Element dragging ended
+            onEnd: function (/**Event*/evt) {
+                var itemEl = evt.item;  // dragged HTMLElement
+                let index = 0;
+                const updatedPositions = [];
+                for (const item of list.children) {
+                    updatedPositions.push(item.dataset.id)
+                }
+                emitUpdatePosition(channel, JSON.stringify(updatedPositions))
+            },
+        });
+
+        function insert(data) {
+            const clone = template.content.cloneNode(true);
+            clone.firstElementChild.dataset.id = data.id;
+            clone.firstElementChild.dataset.position = data.position;
+            clone.querySelector('label').textContent = data.contents;
+            clone.querySelector('input').checked = data.checked
+            list.appendChild(clone);
+        }
+
+        function setupEventSource() {
+            evtSource = new EventSource(source);
+            evtSource.addEventListener("open", event => {
+                emitInit(channel, me)
+            })
+            evtSource.addEventListener("init", (event) => {
+                const data = JSON.parse(event.data);
+                if (data.me == me) {
+                    list.innerHTML = '';
+                    data.list.forEach(insert)
+                }
+            });
+            evtSource.addEventListener("insert", (event) => {
+                const data = JSON.parse(event.data);
+                insert(data)
+            });
+            evtSource.addEventListener("updated-positions", (event) => {
+                const data = JSON.parse(event.data);
+                document.querySelectorAll('[data-id]').forEach(a => {
+                    let found = data.list.find(b => b.id == a.dataset.id)
+                    if (found) {
+                        a.dataset.position = found.position
+                    }
+                })
+                sortable.sort(sortable.toArray(), true);
+            });
+            evtSource.addEventListener("delete", (event) => {
+                const data = JSON.parse(event.data)
+                let item = document.querySelector(`[data-id="${data.id}"]`);
+                if (item) item.remove()
+
+            });
+            evtSource.addEventListener("toggle", (event) => {
+                const data = JSON.parse(event.data);
+                let item = document.querySelector(`[data-id="${data.id}"]`);
+                if (item) item.querySelector('input').checked = data.checked
+            });
+            evtSource.addEventListener("update-contents", (event) => {
+                const data = JSON.parse(event.data);
+                let item = document.querySelector(`[data-id="${data.id}"]`);
+                if (item) item.querySelector('label').value = data.contents
+            });
+            evtSource.addEventListener("clear-completed", (event) => {
+                document.querySelectorAll('[data-id]:has(:checked)').forEach(a => a.remove())
+            });
+            evtSource.addEventListener("toggle-all", (event) => {
+                const data = JSON.parse(event.data);
+                document.querySelectorAll('[data-id]').forEach(a => a.querySelector('input').checked = data.checked)
+            });
+            evtSource.onerror = function (e) {
+                console.error(e)
+                evtSource.close();
+                setupEventSource();
+            };
+        }
+        setupEventSource();
+
+        document.body.addEventListener('click', event => {
+            if (event.target.classList.contains('all')) {
+                list.classList.remove('completed')
+                list.classList.remove('active')
+                active.classList.remove('selected')
+                completed.classList.remove('selected')
+                if (!all.classList.contains('selected')) {
+                    all.classList.add('selected')
+                }
+            } else if (event.target.classList.contains('active')) {
+                list.classList.remove('completed')
+                all.classList.remove('selected')
+                completed.classList.remove('selected')
+                if (!list.classList.contains('active')) {
+                    list.classList.add('active')
+                }
+                if (!active.classList.contains('selected')) {
+                    active.classList.add('selected')
+                }
+            } else if (event.target.classList.contains('completed')) {
+                list.classList.remove('active')
+                all.classList.remove('selected')
+                active.classList.remove('selected')
+                if (!list.classList.contains('completed')) {
+                    list.classList.add('completed')
+                }
+                if (!completed.classList.contains('selected')) {
+                    completed.classList.add('selected')
+                }
+            } else if (event.target.classList.contains('destroy')) {
+                // remove item
+                emitDelete(channel, event.target.parentElement.parentElement.dataset.id)
+            } else if (event.target.classList.contains('toggle')) {
+                // toggle
+                emitToggle(channel, event.target.parentElement.parentElement.dataset.id, event.target.checked)
+            } else if (event.target.classList.contains('clear-completed')) {
+                emitClearCompleted(channel)
+                // clear completed
+            } else if (event.target.classList.contains('toggle-all')) {
+                // toggle all
+                const checked = document.querySelectorAll('[data-id]:has(:checked)').length
+                const all = document.querySelectorAll('[data-id]').length
+                // TODO: if all checked, uncheck, otherwise, check all
+                emitToggleAll(channel, all != checked)
+            }
+        })
+
+        function emitInit(channel, me) {
+            fetch(`/init?channel=${channel}&me=${me}`)
+        }
+        function emitUpdatePosition(channel, positions) {
+            fetch(`/update-positions?channel=${channel}&positions=${positions}`)
+        }
+        function emitDelete(channel, id) {
+            fetch(`/delete?channel=${channel}&id=${id}`)
+        }
+        function emitToggle(channel, id, checked) {
+            fetch(`/toggle?channel=${channel}&id=${id}&checked=${checked}`)
+        }
+        function emitClearCompleted(channel) {
+            fetch(`/clear-completed?channel=${channel}`)
+        }
+        function emitToggleAll(channel, checked) {
+            fetch(`/toggle-all?channel=${channel}&checked=${checked}`)
+        }
+        function emitUpdateContents(channel, id, contents) {
+            fetch(`/update-contents?channel=${channel}&id=${id}&contents=${contents}`)
+        }
+        let mouseDown = 0;
+        document.body.onmousedown = function () {
+            ++mouseDown;
+        }
+        document.body.onmouseup = function () {
+            --mouseDown;
+        }
+        document.body.addEventListener('focusout', event => {
+            if (event.target.classList.contains('todo')) {
+                emitUpdateContents(channel, event.target.parentElement.parentElement.dataset.id, event.target.textContent)
+                event.target.contentEditable = false;
+            }
+        })
+        document.body.addEventListener('focusin', event => {
+            if (event.target.classList.contains('todo') && !mouseDown) {
+                event.target.contentEditable = true;
+                event.target.focus();
+                // if (typeof window.getSelection != "undefined"
+                //     && typeof document.createRange != "undefined") {
+                //     const range = document.createRange();
+                //     range.selectNodeContents(event.target);
+                //     range.collapse(false);
+                //     const sel = window.getSelection();
+                //     sel.removeAllRanges();
+                //     sel.addRange(range);
+                // } else if (typeof document.body.createTextRange != "undefined") {
+                //     const textRange = document.body.createTextRange();
+                //     textRange.moveToElementText(event.target);
+                //     textRange.collapse(false);
+                //     textRange.select();
+                // }
+            }
+        })
+
+        function edit(element) {
+            event.target.contentEditable = true;
+            event.target.focus();
+            // if (typeof window.getSelection != "undefined"
+            //     && typeof document.createRange != "undefined") {
+            //     const range = document.createRange();
+            //     range.selectNodeContents(event.target);
+            //     range.collapse(false);
+            //     const sel = window.getSelection();
+            //     sel.removeAllRanges();
+            //     sel.addRange(range);
+            // } else if (typeof document.body.createTextRange != "undefined") {
+            //     const textRange = document.body.createTextRange();
+            //     textRange.moveToElementText(event.target);
+            //     textRange.collapse(false);
+            //     textRange.select();
+            // }
+        }
+
+        let expired;
+        document.body.addEventListener('touchstart', function doubleTouch (e) {
+            if (event.target.classList.contains('todo') && event.target.contentEditable != 'true') {
+                if (e.touches.length === 1) {
+                    if (!expired) {
+                        expired = e.timeStamp + 400
+                    } else if (e.timeStamp <= expired) {
+                        // remove the default of this event ( Zoom )
+                        e.preventDefault()
+                        mouseDown += 1;
+                        edit(event.target)
+                        mouseDown -= 1;
+                        // then reset the variable for other "double Touches" event
+                        expired = null
+                    } else {
+                        // if the second touch was expired, make it as it's the first
+                        expired = e.timeStamp + 400
+                    }
+                }
+            }
+        })
+        document.body.addEventListener('dblclick', event => {
+            if (event.target.classList.contains('todo') && event.target.contentEditable != 'true') {
+                edit(event.target)
+            }
+        })
+        const input = document.querySelector('.new-todo');
+        document.body.addEventListener("keyup", (event) => {
+            if (event.key === "Enter") {
+                if (event.target == input && event.target.value) {
+                    fetch(`/insert?channel=${channel}&id=${crypto.randomUUID()}&contents=${encodeURIComponent(event.target.value)}`)
+                    event.target.value = ''
+                } else if (event.target.classList.contains('todo')) {
+                    event.target.textContent = event.target.textContent.trim()
+                    event.target.blur()
+                }
+            }
+
+        })
+    </script>
+</body>
+
+</html>
