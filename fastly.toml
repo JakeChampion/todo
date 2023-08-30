@@ -20,8 +20,6 @@ service_id = ""
       port = 443
 
     [setup.backends.self]
-      address = "todo.edgecompute.app"
-      port = 443
 
   [setup.kv_stores]
 
